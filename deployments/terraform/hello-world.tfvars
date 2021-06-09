@@ -1,0 +1,5 @@
+google_project_id       = "velvety-folder-315513"
+google_bucket_name      = "tolganayatb"
+deployment_environment  = "qa"
+deployment_name         = "hello-world"
+credentials             = "fuchicorp-service-account.json"

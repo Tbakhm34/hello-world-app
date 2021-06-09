@@ -7,7 +7,7 @@ replicaCount: 10
 image:
   # repository: docker.tolganay.com/hello-world-stage:38f2828
   # repository: docker.tolganay.com/hello-world-stage:0307540
-  repository: docker.tolganay.com/hello-world-stage:a70b1da
+  repository: docker.tolganay.com/hello-world-stage:d1af5d5
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
@@ -25,14 +25,14 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt-prod
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: dev.hello.tolganay.com
+    - host: qa.hello.tolganay.com
       paths: 
       - '/'
 
   tls: 
   - secretName: chart-example-tls
     hosts:
-      - dev.hello.tolganay.com
+      - qa.hello.tolganay.com
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
