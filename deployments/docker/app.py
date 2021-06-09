@@ -5,16 +5,16 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     return jsonify({
-        'message': 'hello world',
+        'message': 'Hello, my name is Tolganay Akhmetkaliyeva, and I am a developer',
         'environment': os.environ.get('ENVIRONMENT'),
-        'owner': 'tolganay',
+        'owner': 'Tolganay',
         'namespace': os.environ.get('NAMESPACE')
     })
     
-@app.route('/soon')
+@app.route('/tolganay')
 def comming_soon():
     return jsonify({
-        'message': 'This is comming soon page!!'
+        'message': 'This is Tolganay Akhmetkalievas page'
     })
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
