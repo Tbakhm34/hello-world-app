@@ -12,7 +12,7 @@ def hello_world():
     })
     
 @app.route('/tolganay')
-def comming_soon():
+def tolganay():
     return jsonify({
         'message': 'This is Tolganay Akhmetkalievas page'
     })
