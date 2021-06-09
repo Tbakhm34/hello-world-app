@@ -6,7 +6,8 @@ replicaCount: 10
 
 image:
   # repository: docker.tolganay.com/hello-world-stage:38f2828
-  repository: docker.tolganay.com/hello-world-stage:0307540
+  # repository: docker.tolganay.com/hello-world-stage:0307540
+  repository: docker.tolganay.com/hello-world-stage:a70b1da
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
